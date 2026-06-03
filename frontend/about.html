@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Auto Movie Recap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">RECAP.AI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="editing.html">Workspace</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section style="background: var(--card-bg); padding: 3rem; border-radius: 1rem; border: 1px solid var(--border);">
+            <h2 style="margin-bottom: 2rem;">Technical Specifications</h2>
+            <div style="display: grid; gap: 2rem;">
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Frontend Architecture</h3>
+                    <p>Built with Vanilla JavaScript, HTML5, and CSS3. Responsive design using Flexbox and Grid. Communicates with backend via Fetch API.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Backend Engine</h3>
+                    <p>Powered by Python FastAPI for high-performance asynchronous API handling. Background tasks manage heavy video processing without blocking.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Video Processing</h3>
+                    <p>FFmpeg integration for professional-grade video manipulation, including frame-accurate cutting, stream concatenation, and subtitle burn-in filters.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Automation Algorithm</h3>
+                    <p>Scene selection simulator parses SRT subtitle timings to identify key dialogue moments, ensuring the recap captures the essence of the movie.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

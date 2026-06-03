@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Monitor - Auto Movie Recap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">RECAP.AI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="editing.html">Workspace</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Live Generation Monitor</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Processing your recap. Please do not close this page.</p>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p id="progressText" style="text-align: right; margin-bottom: 1rem;">0%</p>
+
+        <div class="terminal" id="terminal">
+            <div>[SYSTEM] Initializing pipeline...</div>
+        </div>
+
+        <div id="resultSection" style="display: none; text-align: center; margin-top: 2rem;">
+            <h3 style="margin-bottom: 1.5rem;">Your Recap is Ready!</h3>
+            <video id="videoPlayer" controls style="width: 100%; max-width: 800px; border-radius: 1rem; border: 1px solid var(--border);">
+                Your browser does not support the video tag.
+            </video>
+            <div style="margin-top: 1.5rem;">
+                <a id="downloadBtn" class="btn btn-primary" download>Download Recap Video</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/preview.js"></script>
+</body>
+</html>
